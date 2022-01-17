@@ -1,0 +1,710 @@
+{
+	"info": {
+		"_postman_id": "22717158-1910-4cd2-b798-366ca013c232",
+		"name": "RealEstateCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserAccountController",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"testUser1@example.com\",\r\n  \"password\": \"Colombia123+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://realestatewebapi20220116194531.azurewebsites.net/api/UserAccount/login",
+							"protocol": "https",
+							"host": [
+								"realestatewebapi20220116194531",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"UserAccount",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginOk",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"testUser1@example.com\",\r\n  \"password\": \"Colombia123+\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/UserAccount/login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"UserAccount",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": ".AspNetCore.Identity.Application=CfDJ8EVMlZpiyqBOlBdCPLj0s0HwAU7lGEriVsaCXnd_qY6HWXMajw8PQk2JA-VPVBvKjgo6Mg81hHUhpX9wQGtge-d2Byh3Flo_ik84EoMPIylE0LIIszSSZe9eN1tXY2PXbwwOu-2nOKIqyzksYpPS7NoSK8JU4T57p5mtOI1geM1xEvkE-KqHQhETb38LYV2ELXKxOJ8eVnBTcyd2jOwbBdzdMi4i_WYdPItWtaMXEl1DWa_u1_eeUQd-jz5YOcsPxKjLTY1HklY7O38-g0IM1CGDThHeOkmvhk23zuYMtU7Wo_MrS_O1t_vY6vNaeATkpE28GVCHo2N5hcR1bE0iCoU-R7UDN5dk0knhr8MqjkPJTJ2khBlRnTWG8NAZUEXW6t5wCQ8mbYAffDVaEDmtttvzDAjQHYjnCm6fAEHIHc4UAzQGTVtE4KYkXPYfr1TDHg0MdgKfnWfOpFZRd2cUUAVCA86gdYdj5eWE8O3QTUawQr_edCeXQjrE7MkuSRBOGj0UTWQ8Uy1Mb_lLQxx0zijPzIeRRb71DCExBsYhEKfRultgeh0nA-2P503XqOOkDYrbmBEb3t3XaqsNHsEj_A_7ufSZ-Nd9QBEXQoEm5rrx1sF42_kJ7x_e9yzMUTotvx3_TDrYXqnoS5H8PBe3vFZZNJsd6KaLMFIbT6DQ904osEC3NUFomcbymwcgUzp1ST1D4NVuXuwMi-NMi1jJp6I14r-E8jtyptUqRpAsu2F-jfH0pZ0W3FrhRuqj5MhBuQ; path=/; secure; samesite=lax; httponly"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jan 2022 01:42:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVc2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTY3MzkxOTczM30.5lnyxIAcwKsAtbFkwWWTPSyJXVaq6nLr61cdY3hDcqE\",\n    \"expiration\": \"2023-01-17T01:42:13.5689641Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\" :\"testUser1@example.com\", \r\n    \"Password\": \"Colombia123+\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44347/api/UserAccount/create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"UserAccount",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createOk",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Email\" :\"testUser1@example.com\", \r\n    \"Password\": \"Colombia123+\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/UserAccount/create",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"UserAccount",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 17 Jan 2022 01:40:23 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVc2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTY3MzkxOTYyMn0.33k9M2UMTEz3PyUxSO4XqevHJWrbV2LXPgyLvBnoSJA\",\n    \"expiration\": \"2023-01-17T01:40:22.8367557Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PropertyController",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVc2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTY3MzkxOTczM30.5lnyxIAcwKsAtbFkwWWTPSyJXVaq6nLr61cdY3hDcqE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"Code\" : \"COD_47\",\r\n        \"Price\" : 1000 ,     \r\n        \"Year\" : 2020,\r\n        \"Address\": \"CL 2 2 2\",\r\n        \"Owner\" :{\t\r\n            \"Email\" : \"owner1@hotmail.com\"\r\n        },\r\n        \"Region\" :{\r\n            \"Code\" : \"11\"\r\n        },\r\n        \"CurrentUserEmail\" : \"user1@mail.com\"\r\n    }\t",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://realestatewebapi20220116194531.azurewebsites.net/api/property",
+							"protocol": "https",
+							"host": [
+								"realestatewebapi20220116194531",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"property"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "InsertOK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"Code\" : \"COD_4\",\r\n\t\"Price\" : 1000 ,     \r\n\t\"Year\" : 2020,\r\n    \"Address\": \"CL 2 2 2\",\r\n\t\"Owner\" :{\t\r\n\t\t\"Email\" : \"owner1@hotmail.com\"\r\n\t},\r\n\t\"Region\" :{\r\n\t\t\"Code\" : \"11\"\r\n\t},\r\n    \"CurrentUserEmail\" : \"user1@mail.com\"\r\n}\t\r\n\r\n"
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/property",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"property"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jan 2022 04:23:20 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Post Image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVc2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTY3MzkxOTczM30.5lnyxIAcwKsAtbFkwWWTPSyJXVaq6nLr61cdY3hDcqE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Image",
+									"type": "file",
+									"src": "/C:/Temp/Images/download.jfif"
+								},
+								{
+									"key": "PropertyCode",
+									"value": "COD_TEST",
+									"type": "default"
+								},
+								{
+									"key": "CurrentUserEmail",
+									"value": "user1@mail.com",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44347/api/property/propertyImage",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44347",
+							"path": [
+								"api",
+								"property",
+								"propertyImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVc2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTY3MzkxOTczM30.5lnyxIAcwKsAtbFkwWWTPSyJXVaq6nLr61cdY3hDcqE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://realestatewebapi20220116194531.azurewebsites.net/api/property?Code=COD_TEST&PriceGreaterThan=0&PriceLessThan=99999999&YearGreatherThan=0&YearLessThan=9999&OwnerEmail=owner1@hotmail.com&RegionCode=1",
+							"protocol": "https",
+							"host": [
+								"realestatewebapi20220116194531",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"property"
+							],
+							"query": [
+								{
+									"key": "Code",
+									"value": "COD_TEST"
+								},
+								{
+									"key": "PriceGreaterThan",
+									"value": "0"
+								},
+								{
+									"key": "PriceLessThan",
+									"value": "99999999"
+								},
+								{
+									"key": "YearGreatherThan",
+									"value": "0"
+								},
+								{
+									"key": "YearLessThan",
+									"value": "9999"
+								},
+								{
+									"key": "OwnerEmail",
+									"value": "owner1@hotmail.com"
+								},
+								{
+									"key": "RegionCode",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET SIN PARAMETROS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/property",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"property"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jan 2022 05:15:31 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"code\": \"COD_4\",\n        \"price\": 10000,\n        \"year\": 2021,\n        \"address\": \"CL 3 2 2\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": []\n    },\n    {\n        \"code\": \"COD_1\",\n        \"price\": 10000,\n        \"year\": 2000,\n        \"address\": \"CL 2 2 20\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": []\n    },\n    {\n        \"code\": \"code\",\n        \"price\": 100,\n        \"year\": 2021,\n        \"address\": \"aAddress test2\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": [\n            {\n                \"file\": \"test\"\n            }\n        ]\n    },\n    {\n        \"code\": \"COD_3\",\n        \"price\": 1000,\n        \"year\": 2020,\n        \"address\": \"CL 2 2 2\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": []\n    },\n    {\n        \"code\": \"COD_5\",\n        \"price\": 1000,\n        \"year\": 2020,\n        \"address\": \"CL 2 2 2\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": []\n    },\n    {\n        \"code\": \"codetest1\",\n        \"price\": 10,\n        \"year\": 2000,\n        \"address\": \"aAddress test1\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": []\n    },\n    {\n        \"code\": \"COD_2\",\n        \"price\": 0,\n        \"year\": 2020,\n        \"address\": \"addres1\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"COLOMBIA\"\n        },\n        \"propertyImages\": [\n            {\n                \"file\": \"https://realestateeducativo.blob.core.windows.net/realestateeducativo/e8a9812b-f7a2-48b1-9686-edda7367d2b0 .jpg\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "GET TODOS LOS PARAMETROS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/property?Code=COD_4&PriceGreaterThan=0&PriceLessThan=99999999&YearGreatherThan=0&YearLessThan=9999&OwnerEmail=owner1@hotmail.com&RegionCode=11",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"property"
+									],
+									"query": [
+										{
+											"key": "Code",
+											"value": "COD_4"
+										},
+										{
+											"key": "PriceGreaterThan",
+											"value": "0"
+										},
+										{
+											"key": "PriceLessThan",
+											"value": "99999999"
+										},
+										{
+											"key": "YearGreatherThan",
+											"value": "0"
+										},
+										{
+											"key": "YearLessThan",
+											"value": "9999"
+										},
+										{
+											"key": "OwnerEmail",
+											"value": "owner1@hotmail.com"
+										},
+										{
+											"key": "RegionCode",
+											"value": "11"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jan 2022 05:21:15 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"code\": \"COD_4\",\n        \"price\": 10000,\n        \"year\": 2021,\n        \"address\": \"CL 3 2 2\",\n        \"owner\": {\n            \"name\": \"RICARDO SANDVOAL  \",\n            \"email\": \"owner1@hotmail.com\",\n            \"phone\": \"3195886140\",\n            \"address\": null\n        },\n        \"region\": {\n            \"code\": null,\n            \"name\": \"BOGOTA\"\n        },\n        \"propertyImages\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RVc2VyMUBleGFtcGxlLmNvbSIsImV4cCI6MTY3MzkxOTczM30.5lnyxIAcwKsAtbFkwWWTPSyJXVaq6nLr61cdY3hDcqE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Code\" : \"COD_4\",\r\n\t\"Price\" : 10000 ,     \r\n\t\r\n\t\"Region\" :{\r\n\t\t\"Code\" : \"11\"\r\n\t},\r\n    \"CurrentUserEmail\" : \"user2@mail.com\"\r\n}\t",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://realestatewebapi20220116194531.azurewebsites.net/api/property",
+							"protocol": "https",
+							"host": [
+								"realestatewebapi20220116194531",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"property"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PutTodosLosCampos",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"Code\" : \"COD_4\",\r\n\t\"Price\" : 10000 ,     \r\n\t\"Year\" : 2021,\r\n    \"Address\": \"CL 3 2 2\",\r\n\t\"Owner\" :{\t\r\n\t\t\"Email\" : \"owner1@hotmail.com\"\r\n\t},\r\n\t\"Region\" :{\r\n\t\t\"Code\" : \"1\"\r\n\t},\r\n    \"CurrentUserEmail\" : \"user2@mail.com\"\r\n}\t",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/property",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"property"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jan 2022 04:45:56 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "PutAlgunosCampos",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"Code\" : \"COD_4\",\r\n\t\"Price\" : 10000 ,     \r\n\t\r\n\t\"Region\" :{\r\n\t\t\"Code\" : \"11\"\r\n\t},\r\n    \"CurrentUserEmail\" : \"user2@mail.com\"\r\n}\t",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44347/api/property",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44347",
+									"path": [
+										"api",
+										"property"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jan 2022 05:04:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
