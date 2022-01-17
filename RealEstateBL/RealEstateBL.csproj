@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\prDataAccess\prDataAccess.csproj" />
+    <ProjectReference Include="..\prDbEntities\prDbEntities.csproj" />
+    <ProjectReference Include="..\prDTO\prDTO.csproj" />
+    <ProjectReference Include="..\prMapper\prMapper.csproj" />
+  </ItemGroup>
+
+</Project>

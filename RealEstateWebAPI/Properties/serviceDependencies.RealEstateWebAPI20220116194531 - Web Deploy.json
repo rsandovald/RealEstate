@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/educationaldbserver/databases/educationaldb",
+      "type": "mssql.azure",
+      "connectionId": "connectionStrings:RealEstateDB",
+      "secretStore": "AzureAppSettings"
+    },
+    "storage1": {
+      "type": "storage",
+      "connectionId": "connectionStrings:AzureStorage",
+      "suggestion": "true",
+      "ignored": "true"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/educationaldbserver/databases/educationaldb",
+      "type": "mssql.azure",
+      "connectionId": "connectionStrings:identityDB",
+      "secretStore": "AzureAppSettings"
+    },
+    "identityapp1": {
+      "type": "identityapp",
+      "connectionId": "",
+      "suggestion": "true",
+      "ignored": "true"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>fc1cb505-d8f8-419b-bfd9-c8e370e14ce2</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/677b08d9-21c3-4984-a3de-204e19d515db/resourcegroups/GrupoRecursosRealEstate/providers/Microsoft.Insights/components/RealEstateWebAPI</ApplicationInsightsResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\prDataAccess\prDataAccess.csproj" />
+    <ProjectReference Include="..\prDTO\prDTO.csproj" />
+    <ProjectReference Include="..\prImageUtility\prImageUtility.csproj" />
+    <ProjectReference Include="..\prMapper\prMapper.csproj" />
+  </ItemGroup>
+
+</Project>
